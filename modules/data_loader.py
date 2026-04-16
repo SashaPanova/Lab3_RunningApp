@@ -13,6 +13,7 @@ class RunDataLoader:
     def load(self) -> pd.DataFrame:
         """Читает JSON, преобразует в DataFrame, добавляет номер дня"""
         if not self.filepath.exists():
+            print(f"🔄 Загружаю данные из файла: {self.filepath}")
             raise FileNotFoundError(f"Файл не найден: {self.filepath}")
         
         with open(self.filepath, 'r', encoding='utf-8') as f:
