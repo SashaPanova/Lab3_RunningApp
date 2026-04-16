@@ -24,7 +24,7 @@ class RunningApp:
         ttk.Button(top, text="📂 Выбрать файл данных", command=self.load_data).pack(side=tk.LEFT, padx=5)
         
         ttk.Label(top, text="Период (n):").pack(side=tk.LEFT, padx=(20, 5))
-        self.n_var = tk.IntVar(value=5)
+        self.n_var = tk.IntVar(value=7)
         ttk.Spinbox(top, from_=2, to=15, textvariable=self.n_var, width=4).pack(side=tk.LEFT)
         
         ttk.Label(top, text="Прогноз (дней):").pack(side=tk.LEFT, padx=(20, 5))
