@@ -23,7 +23,7 @@ class RunVisualizer:
         ax2 = self.fig.add_subplot(2, 1, 2)
         
         # График 1
-        ax1.plot(df['day_num'], df[param1], 'o-', label=param1, color='blue')
+        ax1.plot(df['day_num'], df[param1], 'o-', label=param1, color='teal')
         if forecast:
             future_days = range(df['day_num'].max() + 1, df['day_num'].max() + 1 + len(forecast))
             ax1.plot(future_days, forecast, 's--', label=f'Прогноз ({param1})', color='red')
