@@ -21,7 +21,7 @@ class RunningApp:
         # Верхняя панель
         top = ttk.Frame(self.root, padding="5")
         top.pack(fill=tk.X)
-        ttk.Button(top, text="📂 Открыть JSON", command=self.load_data).pack(side=tk.LEFT, padx=5)
+        ttk.Button(top, text="📂 Выбрать файл данных", command=self.load_data).pack(side=tk.LEFT, padx=5)
         
         ttk.Label(top, text="Период (n):").pack(side=tk.LEFT, padx=(20, 5))
         self.n_var = tk.IntVar(value=5)
